@@ -1,0 +1,1060 @@
+
+
+
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Курс основ програмування мовою Python">
+      
+      
+      
+        <meta name="author" content="Руслан Іськов aka Ruiner">
+      
+      
+        <meta name="lang:clipboard.copy" content="Скопіювати в буфер">
+      
+        <meta name="lang:clipboard.copied" content="Скопійовано в буфер">
+      
+        <meta name="lang:search.language" content="en, ru">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Збігів не знайдено">
+      
+        <meta name="lang:search.result.one" content="Знайдено 1 збіг">
+      
+        <meta name="lang:search.result.other" content="Знайдено # збігів">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Цикли while і for - Python Starter</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-gray" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#while" tabindex="1" class="md-skip">
+        Перейти до основного контенту
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Python Starter" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Python Starter
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Цикли while і for
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Python Starter" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Python Starter
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Про цей курс" class="md-nav__link">
+      Про цей курс
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Модуль 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Модуль 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-01_why_python/" title="Python: що і чому" class="md-nav__link">
+      Python: що і чому
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-02_software/" title="Підготовка програмного забезпечення" class="md-nav__link">
+      Підготовка програмного забезпечення
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-03_console/" title="Інтерактивний режим інтерпретатора Python" class="md-nav__link">
+      Інтерактивний режим інтерпретатора Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-04_vars/" title="Змінні" class="md-nav__link">
+      Змінні
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-05_types/" title="Основні типи даних" class="md-nav__link">
+      Основні типи даних
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-90_problems/" title="Завдання" class="md-nav__link">
+      Завдання
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Модуль 2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Модуль 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-01_functions/" title="Функції" class="md-nav__link">
+      Функції
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-02_types_convertion/" title="Перетворення типів" class="md-nav__link">
+      Перетворення типів
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-03_objects_and_vars/" title="Об'єкти в Python" class="md-nav__link">
+      Об'єкти в Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-04_code_composing/" title="Початковий код" class="md-nav__link">
+      Початковий код
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Модуль 3
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Модуль 3
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-01_sequences/" title="Послідовності та операції з ними" class="md-nav__link">
+      Послідовності та операції з ними
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-02_methods/" title="Методи об'єктів" class="md-nav__link">
+      Методи об'єктів
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-03_str_methods/" title="Методи символьних рядків" class="md-nav__link">
+      Методи символьних рядків
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-04_str_methods_example/" title="Робота з символьними рядками на конкретному прикладі" class="md-nav__link">
+      Робота з символьними рядками на конкретному прикладі
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Модуль 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Модуль 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module04/04-01_list_methods/" title="Методи списків" class="md-nav__link">
+      Методи списків
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module04/04-02_nonetype/" title="Тип даних NoneType" class="md-nav__link">
+      Тип даних NoneType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module04/04-03_bool_expressions/" title="Логічні вирази" class="md-nav__link">
+      Логічні вирази
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module04/04-04_if_statement/" title="Умовний оператор. Інструкція if" class="md-nav__link">
+      Умовний оператор. Інструкція if
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Модуль 5
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Модуль 5
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-01_tuple_methods/" title="Методи словників" class="md-nav__link">
+      Методи словників
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Цикли while і for
+      </label>
+    
+    <a href="./" title="Цикли while і for" class="md-nav__link md-nav__link--active">
+      Цикли while і for
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Зміст</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for" class="md-nav__link">
+    for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    continue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    else
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-03_range/" title="Прийоми використання циклів" class="md-nav__link">
+      Прийоми використання циклів
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Модуль 6
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Модуль 6
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module06/06-01_functions/" title="Функції" class="md-nav__link">
+      Функції
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module06/06-02_local_global_vars/" title="Глобальні та локальні змінні" class="md-nav__link">
+      Глобальні та локальні змінні
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Модуль 7
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Модуль 7
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module07/07-01_unicode/" title="Кодування текстової інформації. Юнікод" class="md-nav__link">
+      Кодування текстової інформації. Юнікод
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module07/07-02_files/" title="Робота з файлами" class="md-nav__link">
+      Робота з файлами
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Модуль 8
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Модуль 8
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module08/08-01_modules/" title="Модулі" class="md-nav__link">
+      Модулі
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module08/08-02_builtins/" title="Батарейки включено" class="md-nav__link">
+      Батарейки включено
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Зміст</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    while
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for" class="md-nav__link">
+    for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    continue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    else
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Цикли while і for</h1>
+                
+                <p><em>Цикли</em> — це інструкції, 
+що виконують одну і ту ж саму послідовність дій, 
+поки діє задана умова. </p>
+<p>У реальному житті ми досить часто стикаємося з циклами. 
+Наприклад, ходьба людини — цілком циклічне явище: 
+крок лівою, крок правою, знову лівою-правою і т.д., 
+поки не буде досягнута певна мета 
+(наприклад, зупинка чи магазин). 
+У комп'ютерних програмах поряд з інструкціями розгалуження 
+(тобто вибором шляху дії) 
+також існують інструкції циклів 
+(повторення дії). 
+Якби інструкцій циклу не існувало, 
+довелося б багато разів вставляти в програму один і той же код 
+підряд стільки разів, 
+скільки потрібно виконати однакову послідовність дій. </p>
+<p>Послідовніть дій, яка виконується циклічно, називається "проходом циклу" або "ітерація циклу".</p>
+<h2 id="while">while<a class="headerlink" href="#while" title="Permanent link">&para;</a></h2>
+<p>Універсальним організатором циклу в Python 
+є конструкція while. 
+Слово "while" з англійської мови перекладається як "доки".
+А увесь цикл можна пояснити словами:</p>
+<blockquote>
+<p>доки логічний вираз має значення True, доти будуть виконуватись певні операції</p>
+</blockquote>
+<p>Заголовок конструкції виглядає так:</p>
+<div class="codehilite"><pre><span></span>while condition:
+</pre></div>
+
+
+<p>'condition' — це логічний вираз. 
+За заголовком конструкції while йде її тіло, тобто блок коду, який буде виконуватись циклічно.</p>
+<p>Розглянемо приклад.<br />
+Припустимо у нас є список цілих чисел, і ми хочемо кожне число з цього списку
+зробити вдвічі більшим.</p>
+<p>Логічно перебрати усі елементи списку по одному, помножити кожен на 2 
+а результат знову помістити у список на те ж саме місце.</p>
+<p>До елементу списка ми можемо отримати доступ за допомогою його індекса.<br />
+Індекси списку можуть приймати значення від 0 до його довжини.</p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span> <span class="c1"># список чисел</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># починаємо з індекса 0</span>
+<span class="k">while</span> <span class="n">index</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># доки індекс не перевищує довжину списка мінус 1</span>
+    <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="c1"># множимо елемент з індексом index на 2</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># переходимо до наступного елементу</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
+</pre></div>
+
+
+<hr />
+<h2 id="for">for<a class="headerlink" href="#for" title="Permanent link">&para;</a></h2>
+<p>Перебір послідовностей по елементах — доволі розповсюджена задача у програмуванні.
+І в Python для зручного перебору послідовностей існує ще один вид циклів: for.</p>
+<p>Заголовок інструкції 'for' виглядає так:</p>
+<div class="codehilite"><pre><span></span>for var in sequence:
+</pre></div>
+
+
+<p>'sequence' — це та послідовніть, яку треба перебрати по елементах.</p>
+<p>Після слова 'for' зразу вказується змінна. У цю змінну при кожній ітерації
+(кожному проході циклу)
+буде попадати черговий елемент з послідовності 'sequence'.</p>
+<p>За заголовком інструкції for йде її тіло — блок коду який буде виконуватись при кожній ітерації.</p>
+<p>Розглянемо простий приклад: треба вивести усі елементи певної послідовності.
+У заданій послідовності ми переберемо усі елементи, один за одним, і виведемо його значення:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span> <span class="c1"># при кожній ітерації в &#39;i&#39; буде черговий елемент списку &#39;l&#39;</span>
+<span class="o">...</span>      <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="s1">&#39;abcd&#39;</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">a</span>
+<span class="n">b</span>
+<span class="n">c</span>
+<span class="n">d</span>
+<span class="o">&gt;&gt;&gt;</span>
+</pre></div>
+
+
+<p>Розглянемо ще приклад.<br />
+Є список цілих чисел. 
+Треба отримати новий список у який буде входити кожен другий елемент 
+з першого списку помножений на 2.</p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span> <span class="c1"># початковий список чисел</span>
+<span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># результуючий список, поки що у ньому нічого немає</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]:</span> <span class="c1"># зразу беремо тільки кожен другий елемент початкового списку</span>
+    <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mi">2</span><span class="o">*</span><span class="n">number</span> <span class="p">)</span> <span class="c1"># додаємо до результуючого списку число з початкового помножене на 2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
+</pre></div>
+
+
+<h2 id="continue">continue<a class="headerlink" href="#continue" title="Permanent link">&para;</a></h2>
+<p>Коли у циклі зустрічається інструкція 'continue', 
+то виконання усіх існтрукцій тіла циклу які йдуть за цим словом припиняється,
+і починається наступний прохід циклу.  </p>
+<p>Розглянемо на прикладі: є список чисел, 
+треба вивести усі числа з цього списку 
+у діапазоні від 50 до 100.</p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">33</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">976</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">710</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">774</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+
+<h2 id="break">break<a class="headerlink" href="#break" title="Permanent link">&para;</a></h2>
+<p>Інструкція break перериває виконання циклу.</p>
+<p>Приклад: у списку чисел знайти індекс елемента зі значенням 7:</p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">33</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">976</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">710</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">66</span><span class="p">]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;index of 7 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+</pre></div>
+
+
+<h2 id="else">else<a class="headerlink" href="#else" title="Permanent link">&para;</a></h2>
+<p>Блок інструкцій після else буде виконано лише у тому випадку,
+якщо вихід з циклу відбувся "природнім шляхом",
+а не був перерваний інструкцією break.</p>
+<p>Приклад: у списку чисел знайти індекс елемента зі значенням 777
+і присвоїти його змінній index.
+Якщо це число не знайдено у списку,
+тоді змінній index присвоїти значення -1.</p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">33</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">976</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">710</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">66</span><span class="p">]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mi">777</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;index of 777 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../05-01_tuple_methods/" title="Методи словників" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Методи словників
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../05-03_range/" title="Прийоми використання циклів" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Прийоми використання циклів
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 Руслан Іськов
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ru.js"></script>
+              
+            
+          
+          
+            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

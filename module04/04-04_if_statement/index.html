@@ -1,0 +1,1030 @@
+
+
+
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Курс основ програмування мовою Python">
+      
+      
+      
+        <meta name="author" content="Руслан Іськов aka Ruiner">
+      
+      
+        <meta name="lang:clipboard.copy" content="Скопіювати в буфер">
+      
+        <meta name="lang:clipboard.copied" content="Скопійовано в буфер">
+      
+        <meta name="lang:search.language" content="en, ru">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Збігів не знайдено">
+      
+        <meta name="lang:search.result.one" content="Знайдено 1 збіг">
+      
+        <meta name="lang:search.result.other" content="Знайдено # збігів">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Умовний оператор. Інструкція if - Python Starter</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-gray" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#if" tabindex="1" class="md-skip">
+        Перейти до основного контенту
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Python Starter" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Python Starter
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Умовний оператор. Інструкція if
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Python Starter" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Python Starter
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Про цей курс" class="md-nav__link">
+      Про цей курс
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Модуль 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Модуль 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-01_why_python/" title="Python: що і чому" class="md-nav__link">
+      Python: що і чому
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-02_software/" title="Підготовка програмного забезпечення" class="md-nav__link">
+      Підготовка програмного забезпечення
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-03_console/" title="Інтерактивний режим інтерпретатора Python" class="md-nav__link">
+      Інтерактивний режим інтерпретатора Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-04_vars/" title="Змінні" class="md-nav__link">
+      Змінні
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-05_types/" title="Основні типи даних" class="md-nav__link">
+      Основні типи даних
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module01/01-90_problems/" title="Завдання" class="md-nav__link">
+      Завдання
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Модуль 2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Модуль 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-01_functions/" title="Функції" class="md-nav__link">
+      Функції
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-02_types_convertion/" title="Перетворення типів" class="md-nav__link">
+      Перетворення типів
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-03_objects_and_vars/" title="Об'єкти в Python" class="md-nav__link">
+      Об'єкти в Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module02/02-04_code_composing/" title="Початковий код" class="md-nav__link">
+      Початковий код
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Модуль 3
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Модуль 3
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-01_sequences/" title="Послідовності та операції з ними" class="md-nav__link">
+      Послідовності та операції з ними
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-02_methods/" title="Методи об'єктів" class="md-nav__link">
+      Методи об'єктів
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-03_str_methods/" title="Методи символьних рядків" class="md-nav__link">
+      Методи символьних рядків
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module03/03-04_str_methods_example/" title="Робота з символьними рядками на конкретному прикладі" class="md-nav__link">
+      Робота з символьними рядками на конкретному прикладі
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Модуль 4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Модуль 4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-01_list_methods/" title="Методи списків" class="md-nav__link">
+      Методи списків
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-02_nonetype/" title="Тип даних NoneType" class="md-nav__link">
+      Тип даних NoneType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-03_bool_expressions/" title="Логічні вирази" class="md-nav__link">
+      Логічні вирази
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Умовний оператор. Інструкція if
+      </label>
+    
+    <a href="./" title="Умовний оператор. Інструкція if" class="md-nav__link md-nav__link--active">
+      Умовний оператор. Інструкція if
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Зміст</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    if
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    if-else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-elif-else" class="md-nav__link">
+    if-elif-else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else_1" class="md-nav__link">
+    Тернарний вираз if-else
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Модуль 5
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Модуль 5
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module05/05-01_tuple_methods/" title="Методи словників" class="md-nav__link">
+      Методи словників
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module05/05-02_while/" title="Цикли while і for" class="md-nav__link">
+      Цикли while і for
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module05/05-03_range/" title="Прийоми використання циклів" class="md-nav__link">
+      Прийоми використання циклів
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Модуль 6
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Модуль 6
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module06/06-01_functions/" title="Функції" class="md-nav__link">
+      Функції
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module06/06-02_local_global_vars/" title="Глобальні та локальні змінні" class="md-nav__link">
+      Глобальні та локальні змінні
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Модуль 7
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Модуль 7
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module07/07-01_unicode/" title="Кодування текстової інформації. Юнікод" class="md-nav__link">
+      Кодування текстової інформації. Юнікод
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module07/07-02_files/" title="Робота з файлами" class="md-nav__link">
+      Робота з файлами
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Модуль 8
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Модуль 8
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module08/08-01_modules/" title="Модулі" class="md-nav__link">
+      Модулі
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../module08/08-02_builtins/" title="Батарейки включено" class="md-nav__link">
+      Батарейки включено
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Зміст</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    if
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    if-else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-elif-else" class="md-nav__link">
+    if-elif-else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else_1" class="md-nav__link">
+    Тернарний вираз if-else
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Умовний оператор. Інструкція if</h1>
+                
+                <p>Хід виконання програми може бути лінійним, 
+тобто таким, коли вирази виконуються, 
+починаючи з першого і закінчуючи останнім рядком, 
+по порядку, не пропускаючи жодного рядка коду. 
+Але частіше буває зовсім не так. 
+При виконанні програмного коду деякі його ділянки можуть бути пропущені. </p>
+<p>Щоб краще зрозуміти чому, 
+проведемо аналогію з реальним життям. 
+Припустимо, 
+людина живе за розкладом (можна сказати, розклад - це своєрідний "програмний код", який слід виконати). 
+У її розкладі о 19:00 запланований онлайн-заняття з програмування на Python. 
+Але такі заняття відбуваються не кожного дня,
+а тільки щочетверга.
+Отже однією з умов участі людини в занятті о 19 годині є те, 
+що сьогодні четвер, 
+інакше в цей час доцільно виконувати інші дії.</p>
+<hr />
+<h2 id="if">if<a class="headerlink" href="#if" title="Permanent link">&para;</a></h2>
+<p>Схожа нелінійність дій може бути передбачена і в комп'ютерній програмі. 
+Наприклад, частина коду повинна виконуватися лише при певному значенні конкретної змінної. </p>
+<p>В Python для цього існує інструкція "if". 
+Записується вона так: </p>
+<div class="codehilite"><pre><span></span>if condition:
+    some_code
+</pre></div>
+
+
+<p>Перший рядок конструкції if — це заголовок, в якому перевіряється умова виконання.
+"condition" — це логічний вираз, і якщо він дорівнює True, то умова виконується.</p>
+<p>Після двокрапки йде тіло конструкції, воно позначене вище як "some_code".
+Це той програмний код, який буде виконуватись у разі виконання умови у заголовку конструкції.</p>
+<p>У вищевказаному прикладі тіло містить всього лише один вислів, однак частіше їх буває набагато більше.</p>
+<p>В конструкції if код, який виконується при дотриманні умови (тіло), 
+повинен обов'язково мати відступ вправо. 
+Решта коду (основна програма) повинна мати той же відступ, 
+що й слово if. 
+Відступ рекомендується робити чотирма пробілами. 
+Але часто у якості відступа вказуються символ табуляції.</p>
+<p>Розглянемо приклад:</p>
+<div class="codehilite"><pre><span></span>if a &lt;= 100:
+    c = a
+</pre></div>
+
+
+<p>Вищенаведений код читається так:</p>
+<blockquote>
+<p>Якщо a менше або дорівнює 100,
+то c слід присвоїти a.</p>
+</blockquote>
+<p>Приклад з декільками рядками коду які будуть виконуватись при певній умові:</p>
+<div class="codehilite"><pre><span></span>if price &lt;= cash:
+    print(&#39;Thank you for purchase!&#39;)
+    change = cash - price
+    print(&#39;Your change:&#39;, change)
+</pre></div>
+
+
+<h2 id="if-else">if-else<a class="headerlink" href="#if-else" title="Permanent link">&para;</a></h2>
+<p>Існує більш складна форма розгалуження: 
+if-else. 
+Якщо умова при інструкції if виявляється хибною, 
+то виконується блок коду при інструкції else. </p>
+<div class="codehilite"><pre><span></span>if price1 + price2 &lt;= cash:
+    print(&#39;Thank you for purchase&#39;)
+    change = cash - (price1 + price2)
+    print(&#39;Your change:&#39;, change)
+else:
+    print(&#39;Not enough cash!&#39;)
+</pre></div>
+
+
+<h2 id="if-elif-else">if-elif-else<a class="headerlink" href="#if-elif-else" title="Permanent link">&para;</a></h2>
+<p>Логіка виконуваної програми може бути складніша, 
+ніж вибір однієї з двох гілок. 
+Наприклад, залежно від значення тієї чи іншої змінної, 
+може виконуватися одна з трьох (або більше) гілок програми. </p>
+<p>Як організувати таке множинне розгалуження? 
+Напевно, можна використовувати декілька інструкцій if: 
+спочатку перевіряється умовний вираз у першій інструкції if 
+(якщо він True, 
+то буде виконуватися вкладений в неї блок коду), 
+потім у другій інструкції if і т.д. 
+Однак при такому підході перевірка наступних інструкцій буде продовжуватися навіть тоді, 
+коли перша умова була True, 
+і блок коду при даній гілці був виконаний. 
+Перевірка наступних умов може виявитися безглуздою.</p>
+<p>В Python передбачено спеціальне розширення інструкції if, 
+що дозволяє направити потік виконання програми з одній гілок. 
+Дана розширена інструкція, 
+крім необов'язкової частини else, 
+містить ряд гілок elif 
+(скорочення від "else if" - "ще якщо").
+Частин elif може бути як завгодно багато (в межах розумного, звичайно).</p>
+<p>Приклад:</p>
+<div class="codehilite"><pre><span></span>x = -33
+if x &gt; 0:
+    print(1)
+elif x &lt; 0:
+    print(-1)
+else:
+    print(0)
+</pre></div>
+
+
+<hr />
+<h2 id="if-else_1">Тернарний вираз if-else<a class="headerlink" href="#if-else_1" title="Permanent link">&para;</a></h2>
+<p>Доволі часто зустрічається конструкція наступного вигляду:</p>
+<div class="codehilite"><pre><span></span>if condition:
+    a = X
+else:
+    a = Y
+</pre></div>
+
+
+<p>Сама по собі конструкція доволі проста, але займає аж 4 рядки коду.
+Спеціально для таких випадків в Python є конструкція з більш коротким записом:</p>
+<div class="codehilite"><pre><span></span>a = X if condition else Y
+</pre></div>
+
+
+<p>Тобто якщо виконується умова condition, 
+то a присвоїти значення виразу X, 
+інакше a присвоїти значення виразу Y.</p>
+<p>Приклад:</p>
+<div class="codehilite"><pre><span></span>mark = &#39;Good&#39; if answer == solution else &#39;Not good&#39;
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../04-03_bool_expressions/" title="Логічні вирази" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Логічні вирази
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../module05/05-01_tuple_methods/" title="Методи словників" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Методи словників
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 Руслан Іськов
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ru.js"></script>
+              
+            
+          
+          
+            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

@@ -13,6 +13,8 @@
         <meta name="description" content="Курс основ програмування мовою Python">
       
       
+        <link rel="canonical" href="http://ruslan.rv.ua/python-starter/module05/05-02_while/">
+      
       
         <meta name="author" content="Руслан Іськов aka Ruiner">
       
@@ -98,7 +100,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Python Starter" class="md-header-nav__button md-logo">
+        <a href="http://ruslan.rv.ua/python-starter/" title="Python Starter" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -143,7 +145,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="Python Starter" class="md-nav__button md-logo">
+    <a href="http://ruslan.rv.ua/python-starter/" title="Python Starter" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -861,7 +863,7 @@
 <span class="k">while</span> <span class="n">index</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># доки індекс не перевищує довжину списка мінус 1</span>
     <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="c1"># множимо елемент з індексом index на 2</span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># переходимо до наступного елементу</span>
-<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
 </pre></div>
 
 
@@ -883,7 +885,7 @@
 У заданій послідовності ми переберемо усі елементи, один за одним, і виведемо його значення:</p>
 <div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span> <span class="c1"># при кожній ітерації в &#39;i&#39; буде черговий елемент списку &#39;l&#39;</span>
-<span class="o">...</span>      <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">...</span>      <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="o">...</span>
 <span class="mi">1</span>
 <span class="mi">2</span>
@@ -891,7 +893,7 @@
 <span class="mi">4</span>
 <span class="mi">5</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="s1">&#39;abcd&#39;</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="o">...</span>
 <span class="n">a</span>
 <span class="n">b</span>
@@ -909,7 +911,7 @@
 <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># результуючий список, поки що у ньому нічого немає</span>
 <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]:</span> <span class="c1"># зразу беремо тільки кожен другий елемент початкового списку</span>
     <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mi">2</span><span class="o">*</span><span class="n">number</span> <span class="p">)</span> <span class="c1"># додаємо до результуючого списку число з початкового помножене на 2</span>
-<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="c1"># ну і подивимось що у нас вийшло</span>
 </pre></div>
 
 
@@ -924,7 +926,7 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
         <span class="k">continue</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 
 
@@ -937,7 +939,7 @@
     <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;index of 7 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index of 7 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
 </pre></div>
 
 
@@ -957,7 +959,7 @@
     <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">index</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;index of 777 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index of 777 =&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
 </pre></div>
                 
                   

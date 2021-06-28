@@ -1,0 +1,75 @@
+{
+  "selectedTemplate": 4,
+  "headings": {
+    "education": "",
+    "skills": "",
+    "projects": "",
+    "awards": ""
+  },
+  "basics": {
+    "name": "Ruslan Iskov",
+    "email": "ruslan.rv.ua@gmail.com",
+    "phone": "+380973042447",
+    "location": {
+      "address": "Zdolbuniv, Ukraine"
+    }
+  },
+  "education": [
+    {
+      "institution": "",
+      "location": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "gpa": ""
+    }
+  ],
+  "work": [
+    {
+      "company": "Inclusive IT",
+      "website": "",
+      "endDate": "present",
+      "highlights": [
+        null
+      ],
+      "position": "Accessibility QA"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        null
+      ],
+      "name": "Python"
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "url": "",
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}

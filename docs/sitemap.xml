@@ -2,352 +2,352 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://ruslan.rv.ua/python-starter/index.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/about_python.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/next_steps.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/zen.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/bool_logic/bool.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/bool_logic/bool_expressions.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/dict/dict.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/dict/dict_methods.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/dict/dict_traversal.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions/functions.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions/functions_exprs.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions/types_convertion.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/functions_def.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/functions_explained.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/functions_naming.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/functions_params.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/functions_return.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/functions_def/local_global_vars.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/if/elif_statement.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/if/else_statement.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/if/if_statement.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/if/ternar_if.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_for/for.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_for/loop_flow.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_for/range.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_for/usage.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_while/loops.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_while/syntactic_sugar.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_while/usage.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/loop_while/while.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/methods/methods.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/methods_list/list_methods.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/methods_list/stack.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/methods_str/str_format.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/methods_str/str_methods.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/modules/module_composing.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/modules/module_usage.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/modules/modules.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/modules/pprint_module.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/modules/random_module.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/objects/containers_bindings.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/objects/immutable_exceptions.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/objects/mutability.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/objects/objects_and_vars.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/preparations/console.html</loc>
-         <lastmod>2021-06-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://ruslan.rv.ua/python-starter/preparations/demka.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/preparations/editor.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/preparations/interpreter.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/preparations/os.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/preparations/screenreader.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://ruslan.rv.ua/python-starter/preparations/telecode.html</loc>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/sequences/complex_structures.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/sequences/list.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/sequences/sequences.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/sequences/tuple.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/source_code/comments.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/source_code/print.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/source_code/run_program.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/source_code/source_code.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/strings/escapes.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/strings/indexing.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/strings/strings.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/strings/strings_operations.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/text_files/open_close_flush.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/text_files/read_write.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/text_files/unicode.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/vars_and_types/numbers.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/vars_and_types/problems.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/vars_and_types/statement_and_expression.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/vars_and_types/types.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://ruslan.rv.ua/python-starter/vars_and_types/vars.html</loc>
-         <lastmod>2021-06-28</lastmod>
+         <lastmod>2021-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

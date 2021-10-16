@@ -115,7 +115,7 @@ nav:
     - Операційна система: preparations/os.md
     - Інтерпретатор Python: preparations/interpreter.md
     - Засоби розробки: preparations/editor.md
-    - Демонстрація коду: preparations/demka.md
+    - Перегляд коду: preparations/telecode.md
     - Скрінрідер: preparations/screenreader.md
     - Інтерактивний режим інтерпретатора Python: preparations/console.md
   - 02. Типи даних. Змінні:
